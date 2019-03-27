@@ -1,1 +1,1 @@
-`npm install @ampersanda/lessfiles`
+`npm install ampersanda-lessfiles`
