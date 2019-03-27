@@ -1,0 +1,74 @@
+@import './typography';
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  zoom: 1;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+._w--padding {
+  padding: 0 8%;
+}
+
+.with-cellophane-padding() {
+  padding: 112px 8%;
+}
+
+.default-hover() {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul {
+  &.is--nothing {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.is--hidden {
+  display: none !important;
+}
+
+._c {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  &&--medium {
+    max-width: 1340px;
+  }
+
+  &&--fluid {
+    max-width: initial;
+  }
+}
+
+.img-wrap {
+  font-size: 0;
+}
+
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+
+  + label {
+    cursor: pointer;
+  }
+}
+
+a {
+  &.no-decor {
+    text-decoration: none;
+    color: #444;
+  }
+}
